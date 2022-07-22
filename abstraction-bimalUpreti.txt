@@ -1,0 +1,144 @@
+package Abstraction;
+
+public abstract class AbstractAnimal {
+
+	public abstract void sound();
+	public abstract void structure();
+	public abstract void speed();
+	public abstract void habitat();
+	
+	public final void reproduce() {
+		System.out.println("Animal reproduces");
+	}
+	
+	public final void breath() {
+		System.out.println("Animal breaths");
+	}
+}
+
+
+
+
+package Abstraction;
+
+public class Human extends AbstractAnimal{
+
+
+	public void sound() {
+		System.out.println("Talk");
+	}
+	
+	public void structure() {
+		// TODO Auto-generated method stub
+		System.out.println("2 leg and 2 hand");
+	}
+
+
+	public void speed() {
+		// TODO Auto-generated method stub
+		System.out.println("Medium speed");
+	}
+
+
+	public void habitat() {
+		// TODO Auto-generated method stub
+		System.out.println("Society");
+	}
+
+}
+
+
+
+
+package Abstraction;
+
+public class Dog extends AbstractAnimal{
+
+	
+	public void sound() {
+		// TODO Auto-generated method stub
+		System.out.println("bark");
+	}
+
+	
+	public void structure() {
+		//to-generated method stub
+		System.out.println("4 leg");
+	}
+
+	
+	public void speed() {
+		// TODO Auto-generated method stub
+		System.out.println("Fast");
+	}
+
+	
+	public void habitat() {
+		// TODO Auto-generated method stub
+		System.out.println("Home and outdoor");
+	}
+
+}
+
+
+
+
+package Abstraction;
+
+public class Tiger extends AbstractAnimal{
+
+	
+	public void sound() {
+		// TODO Auto-generated method stub
+		System.out.println("Roar");
+	}
+
+	public void structure() {
+		// TODO Auto-generated method stub
+		System.out.println("big and 4 leg");
+	}
+
+	
+	public void speed() {
+		// TODO Auto-generated method stub
+		System.out.println("Very fast");
+	}
+
+	
+	public void habitat() {
+		// TODO Auto-generated method stub
+		System.out.println("Jungle");
+	}
+
+}
+
+
+
+
+package Abstraction;
+
+public class testMain {
+
+	public static void main(String[] args) {
+		
+		Dog d = new Dog();
+		d.sound();
+		d.structure();
+		d.breath();
+		
+		Tiger t = new Tiger();
+		t.speed();
+		t.reproduce();
+		t.sound();
+		
+		Human h = new Human();
+		h.breath();
+		h.structure();
+		h.sound();
+
+	}
+
+}
+
+
+
